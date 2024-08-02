@@ -1,0 +1,38 @@
+.contact-form{
+  max-width: 460px;
+}
+.contact{
+  background-color: var(--light-grey-color);
+}
+.contact-form .form-control{
+  width: 100%;
+  background-color: transparent;
+  border-radius: 45px;
+  border: 1px solid var(--dark-color);
+  min-height: 66px;
+  font-size: 22px;
+  padding: 0 3rem;
+  line-height: 66px;
+  margin-bottom: 2.6rem;
+  outline:none;
+  font-weight: 200;
+}
+
+.contact-form textarea.form-control{
+  font-size: 22px;
+  font-weight: 500;
+  resize: none;
+}
+.contact-form .submit-btn{
+  font-size: 22px;
+  font-weight: 200;
+  width: 100%;
+  border-radius: 45px;
+  border: 1px solid var(--brown-color);
+  min-height: 66px;
+  transition: var(--transition);
+}
+.contact-form .submit-btn:hover{
+  background-color: transparent;
+  color: var(--brown-color);
+}

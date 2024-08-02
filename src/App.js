@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./components/header/header";
+import "./assets/js/script";
+import Works from "./components/Works/Works";
+import WorkProcess from "./components/WorkProcess/WorkProcess";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import { Element } from "react-scroll";
+import Skills from "./components/Service/Skills";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App">
+        <Header />
+        <Element name="skills">
+          <Skills />
+        </Element>
+        <Element name="works">
+          <Works />
+        </Element>
+        <Element name="workProcess">
+          <WorkProcess />
+        </Element>
+        <Element name="about">
+          <About />
+        </Element>
+
+        <Element name="contact">
+          <Contact />
+        </Element>
+        <Footer />
+      </div>
     </div>
   );
 }

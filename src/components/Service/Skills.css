@@ -1,0 +1,27 @@
+.skills-list{
+  row-gap: 2rem;
+}
+.skills-item{
+  padding: 2.4rem;
+}
+.skills-item-img{
+  margin-bottom: 0.8rem;
+}
+.skills-item-img img{
+  width: 80px;
+}
+.skills-item-text .text{
+  max-width: 460px;
+}
+@media screen and (min-width:768px) {
+  .skills-list{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width:992px){
+  .skills-list{
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+}
